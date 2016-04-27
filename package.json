@@ -1,0 +1,17 @@
+{
+  "name": "codeschool_website_demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "jquery": "^2.2.3",
+    "normalize-css": "^2.3.1",
+    "reset-css": "^2.0.2011012603"
+  }
+}

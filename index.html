@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Codeschool Demo</title>
+    <!-- STYLES -->
+    <link rel="stylesheet" href="node_modules/normalize-css/normalize.css">
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <header class="main_heading">
+      <h1>Front-end News!</h1>
+    </header>
+
+    <main>
+
+      <header class="add_news">
+        <h2>Latest News</h2>
+        <p>The latest links in the frontend community. <span class="link-add">Add a link now!</span></p>
+      </header>
+      <form>
+        <label for="news">Add News Here</label>
+        <input type="text" id="news">
+      </form>
+      <div class="overlay">
+        <div class="model">
+          <div class="model_media">
+            <img src="img/profile.jpg" height="941" width="1200" alt="profile picture">
+            <p>Dan Daney</p>
+          </div>
+          <div class="work">
+            <ol>
+              <li>Frontend Dev</li>
+              <li>Javascript dev</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <ol>
+        <li>
+          <p>Frontend Design</p>
+          <ul>
+            <span class="posted_by">Posted By: </span>
+            <li class="name">Dan Denney</li>
+            <li>2 comments</li>
+            <li class="link-like">Like!</li>
+          </ul>
+        </li>
+        <li>
+          <p>Getting ready for HTTP2</p>
+          <ul>
+            <span class="posted_by">Posted By: </span>
+            <li>Ashish Gambhir</li>
+            <li>3 comments</li>
+            <li class="link-like">Like!</li>
+          </ul>
+        </li>
+        <li>
+          <p>Managing typography on large apps</p>
+          <ul>
+            <span class="posted_by">Posted By: </span>
+            <li>Ratan Tata</li>
+            <li>2 comments</li>
+            <li class="link-like">Like!</li>
+          </ul>
+        </li>
+        <li>
+          <p>Estimating a frontend job</p>
+          <ul>
+            <span class="posted_by">Posted By: </span>
+            <li>Narendra Mode</li>
+            <li>5 comments</li>
+            <li class="link-like">Like!</li>
+          </ul>
+        </li>
+      </ol>
+    </main>
+
+    <!-- SCRIPTS -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

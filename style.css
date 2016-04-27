@@ -1,0 +1,156 @@
+body{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+header.main_heading{
+  background: purple;
+}
+
+header.main_heading h1{
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+  padding: 1.5em 0;
+}
+
+main{
+  max-width: 800px;
+  margin: 1em auto;
+}
+
+main ol, main ul{
+  list-style: none;
+  padding: 0;
+}
+
+main ol> li> p{
+  color: blue;
+  text-decoration: underline;
+}
+
+main ol li{
+  padding: 1.5em 0;
+  border-bottom: 1px solid grey;
+}
+
+main ul{ 
+  padding: 0;
+}
+
+main ul li{
+  display: inline;
+  margin-right: 1em;
+  text-decoration: underline;
+  color: pink;
+}
+
+main ul .posted_by{
+  display: inline;
+  text-decoration: none;
+  color: black;
+}
+
+.link-liked{
+  animation: fade-in-out 2s;
+}
+
+@keyframes fade-in-out{
+  from, 50%, to{
+    opacity: 0;
+  }
+
+  25%, 75%{
+    opacity: 1;
+  }
+}
+
+.add_news p span{
+  text-decoration: underline;
+  color: blue;
+}
+
+form{
+  opacity:0;
+  visibility: hidden;
+  height: 0;
+  margin-bottom: -20px;
+  transition: all .4s;
+}
+
+.form-added{
+  opacity: 1;
+  visibility: visible;
+  animation: form-in 1s ease-in forwards;
+}
+
+@keyframes form-in{
+  from {
+    margin-bottom: -20px;
+  }
+  50% {
+    margin-bottom: 0px;
+  }
+
+  100%{
+    margin-bottom: 10px;
+  }
+}
+
+.overlay{
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease-in-out;
+}
+
+.overlay-added{
+  opacity: 1;
+  visibility: visible;
+}
+
+.model{
+  width: 50%;
+  margin: 0 auto;
+}
+
+.model_media{
+  position: relative;
+}
+
+.model_media img{
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+.overlay-added .model_media img{
+  margin-top: -100px;
+  animation: anim-top .8s forwards;
+}
+
+@keyframes anim-top{
+  from, 20%{
+    margin-top: -100px;
+  }
+  to{
+    margin-top: 0px;
+  }
+}
+
+.model_media p{
+  position: absolute;
+  bottom: 10px;
+  left: 5px;
+  font-size: bold;
+  color:white;
+  text-shadow: 1px 2px 1px black;
+}
